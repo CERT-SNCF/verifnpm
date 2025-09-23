@@ -1,6 +1,6 @@
 #!/bin/bash
 log="/tmp/resultverif_shai_hulud.txt"
-rm $log 2>/dev/null
+rm -f $log 2>/dev/null
 echo "Run with privileges of better results. Logs in $log"
 echo "Searching for shai-hulud*.y*ml" | tee $log
 find / -type f -name "shai-hulud*.y*ml" 2>/dev/null | tee -a $log
